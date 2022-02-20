@@ -30,11 +30,10 @@ function msToTime(s) {
     let secs = s % 60;
     s = (s - secs) / 60;
     let mins = s % 60;
-    //let hrs = (s - mins) / 60;
 
     return formatNums(mins) + ':' + formatNums(secs)
   } else {
-    return "00:00:00"
+    return "00:00"
   }
 }
 
@@ -45,7 +44,7 @@ function getTimeDiff(day, time) {
     dt.setDate(dt.getDate() - day);
   }
 
-  time == "am" ? dt.setHours(10, 0, 0) : dt.setHours(18, 10, 0)
+  time == "am" ? dt.setHours(10, 0, 0) : dt.setHours(19, 0, 0)
 
   let difference = Date.parse(dt) - Date.now()
   return difference;
@@ -53,7 +52,7 @@ function getTimeDiff(day, time) {
 
 function displayClock(){
   let display = null
-  today == 0 ? display = getTimeDiff(today, "pm") : display = getTimeDiff(today, "pm");
+  today == 0 ? display = getTimeDiff(today, "am") : display = getTimeDiff(today, "pm");
   document.getElementById('timer').innerHTML = msToTime(display);
   if (display < 120000) {
     document.getElementById('timer').style.color = 'red'
