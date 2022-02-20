@@ -8,8 +8,24 @@
   </head>
 
   <body>
-    <h1>Meeting Slide</h1>
-    <div id='timer'></div>
+    <div id="flexbox">
+      <button onclick="toggleFullscreen();" id="fs-button">Full Screen</button>
+    </div>
+    <div id='container'>
+      <img src='images/meeting.png' alt-'meeting_img' class='logo'>
+      <h1>Welcome to Brierley Hill Congregation of Jehovah's Witnesses</h1>
+      <h2>Our meeting will begin in:</h2>
+      <h1 id='timer'></h1>
+      <p>Brothers, sisters and visitors to our meeting for the first time, may we request that you dignify the programme as follows: </p>
+      <hr>
+      <ul>
+        <li>The invitation for this meeting should not be shared on social media or in our public witnessing</li>
+        <li>If appearing on camera please maintain modest and well arranged dress. - <strong>2 Corinthians 6:3</strong></li>
+        <li>Even though we are at home, this is still a meeting. - <strong>Hebrews 10:24</strong></li>
+      </ul>
+      <hr>
+      <p>Thank you for giving these important matters your attention.</p>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
