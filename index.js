@@ -30,14 +30,19 @@ function msToTime(s) {
     let secs = s % 60;
     s = (s - secs) / 60;
     let mins = s % 60;
+    let hrs = (s - mins) / 60;
 
-    return formatNums(mins) + ':' + formatNums(secs)
+    if (hrs > 0) {
+      return `${formatNums(hrs)} : ${formatNums(mins)} : ${formatNums(secs)}`
+    } else {
+      return `${formatNums(mins)} : ${formatNums(secs)}`
+    }
   } else {
     return "00:00"
   }
 }
 
-// getDay() returns the day of the week for the specified date according to local time, where 0 represents Sunday
+// getDay() returns the day of the week for the specified date according to local time (Sun == 0, Mon == 1...)
 function getTimeDiff(day, time) {
   let dt = new Date();
   while (dt.getDay() != day) {
