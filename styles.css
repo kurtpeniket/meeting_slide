@@ -5,6 +5,7 @@ html, body {
     text-align: center;
     padding: 30px;
     vertical-align: center;
+    font-size: 135%;
 }
 
 #flexbox {
@@ -60,8 +61,8 @@ button:active {
 }
 
 #container {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 ::backdrop
@@ -70,26 +71,21 @@ button:active {
 }
 
 .logo {
-    width: 200px;
+    width: 250px;
     height: auto;
     padding: 10px;
 }
 
 #timer {
-    font-size: 70px;
+    font-size: 100px;
 }
 
 ul {
-    font-size: 25px;
     text-align: left;
 }
 
 li {
     padding: 10px;
-}
-
-p {
-    font-size: 25px;
 }
 
 @media all and (display-mode: fullscreen) {
@@ -98,6 +94,6 @@ p {
     }
 
     #container {
-        margin-top: 10px;
+        margin-top: 3%;
     }
 }
