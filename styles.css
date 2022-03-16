@@ -5,7 +5,7 @@ html, body {
     text-align: center;
     padding: 30px;
     vertical-align: center;
-    font-size: 130%;
+    font-size: 120%;
 }
 
 #flexbox {
@@ -61,8 +61,8 @@ button:active {
 }
 
 #container {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 ::backdrop
@@ -94,6 +94,6 @@ li {
     }
 
     #container {
-        margin-top: 3%;
+        /*margin-top: 3%;*/
     }
 }
